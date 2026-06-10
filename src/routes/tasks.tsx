@@ -58,7 +58,7 @@ function TasksPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-      <PageHeader icon={<ListChecks className="h-5 w-5" />} title="AI Task Planner" description="Describe a goal — get a prioritized plan you can edit." />
+      <PageHeader icon={<ListChecks className="h-5 w-5" />} iconClassName="bg-task/10 text-task" title="AI Task Planner" description="Describe a goal — get a prioritized plan you can edit." />
       <AiDisclaimer />
 
       <Card>

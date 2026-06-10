@@ -46,7 +46,7 @@ function EmailPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-      <PageHeader icon={<Mail className="h-5 w-5" />} title="Smart Email Generator" description="Tell us the gist — we'll write a polished email." />
+      <PageHeader icon={<Mail className="h-5 w-5" />} iconClassName="bg-email/10 text-email" title="Smart Email Generator" description="Tell us the gist — we'll write a polished email." />
       <AiDisclaimer />
 
       <Card>

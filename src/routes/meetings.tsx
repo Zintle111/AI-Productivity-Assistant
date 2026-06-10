@@ -58,7 +58,7 @@ function MeetingsPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-      <PageHeader icon={<FileText className="h-5 w-5" />} title="Meeting Notes Summarizer" description="Paste meeting notes or transcripts; get structured takeaways." />
+      <PageHeader icon={<FileText className="h-5 w-5" />} iconClassName="bg-meeting/10 text-meeting" title="Meeting Notes Summarizer" description="Paste meeting notes or transcripts; get structured takeaways." />
       <AiDisclaimer />
 
       <Card>
