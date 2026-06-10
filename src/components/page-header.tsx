@@ -4,15 +4,17 @@ export function PageHeader({
   title,
   description,
   icon,
+  iconClassName = "bg-primary/10 text-primary",
 }: {
   title: string;
   description: string;
   icon?: ReactNode;
+  iconClassName?: string;
 }) {
   return (
     <div className="flex items-start gap-3">
       {icon ? (
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${iconClassName}`}>
           {icon}
         </div>
       ) : null}
