@@ -44,7 +44,7 @@ function ChatPage() {
 
   return (
     <div className="mx-auto flex h-[calc(100vh-10rem)] max-w-3xl flex-col gap-4">
-      <PageHeader icon={<MessagesSquare className="h-5 w-5" />} title="AI Chatbot" description="Ask anything — drafting, brainstorming, quick answers." />
+      <PageHeader icon={<MessagesSquare className="h-5 w-5" />} iconClassName="bg-chat/10 text-chat" title="AI Chatbot" description="Ask anything — drafting, brainstorming, quick answers." />
       <AiDisclaimer />
 
       <Card className="flex flex-1 flex-col overflow-hidden">

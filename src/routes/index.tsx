@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Mail, FileText, ListChecks, Search, MessagesSquare, ArrowRight, Sparkles } from "lucide-react";
+import { Mail, FileText, ListChecks, Search, MessagesSquare, ArrowRight, Sparkles, LayoutDashboard } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { PageHeader } from "@/components/page-header";
 
@@ -14,11 +14,11 @@ export const Route = createFileRoute("/")({
 });
 
 const tools = [
-  { to: "/email", title: "Smart Email Generator", desc: "Draft polished emails in seconds.", icon: Mail },
-  { to: "/meetings", title: "Meeting Summarizer", desc: "Turn notes into action items.", icon: FileText },
-  { to: "/tasks", title: "AI Task Planner", desc: "Break goals into a plan.", icon: ListChecks },
-  { to: "/research", title: "Research Assistant", desc: "Quick briefings on any topic.", icon: Search },
-  { to: "/chat", title: "AI Chatbot", desc: "Ask anything, anytime.", icon: MessagesSquare },
+  { to: "/email", title: "Smart Email Generator", desc: "Draft polished emails in seconds.", icon: Mail, color: "bg-email/10 text-email" },
+  { to: "/meetings", title: "Meeting Summarizer", desc: "Turn notes into action items.", icon: FileText, color: "bg-meeting/10 text-meeting" },
+  { to: "/tasks", title: "AI Task Planner", desc: "Break goals into a plan.", icon: ListChecks, color: "bg-task/10 text-task" },
+  { to: "/research", title: "Research Assistant", desc: "Quick briefings on any topic.", icon: Search, color: "bg-research/10 text-research" },
+  { to: "/chat", title: "AI Chatbot", desc: "Ask anything, anytime.", icon: MessagesSquare, color: "bg-chat/10 text-chat" },
 ] as const;
 
 function Dashboard() {
@@ -26,6 +26,7 @@ function Dashboard() {
     <div className="mx-auto max-w-6xl space-y-8">
       <PageHeader
         icon={<Sparkles className="h-5 w-5" />}
+        iconClassName="bg-primary/10 text-primary"
         title="Welcome to Amateur"
         description="Your AI assistant for everyday workplace tasks. Pick a tool to get started."
       />
@@ -35,7 +36,7 @@ function Dashboard() {
           <Link key={t.to} to={t.to} className="group">
             <Card className="h-full transition-all hover:border-primary/40 hover:shadow-md">
               <CardHeader>
-                <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <div className={`mb-2 flex h-10 w-10 items-center justify-center rounded-lg ${t.color}`}>
                   <t.icon className="h-5 w-5" />
                 </div>
                 <CardTitle className="flex items-center justify-between text-base">

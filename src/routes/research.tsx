@@ -55,7 +55,7 @@ function ResearchPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-      <PageHeader icon={<Search className="h-5 w-5" />} title="AI Research Assistant" description="Get a structured briefing on any topic in seconds." />
+      <PageHeader icon={<Search className="h-5 w-5" />} iconClassName="bg-research/10 text-research" title="AI Research Assistant" description="Get a structured briefing on any topic in seconds." />
       <AiDisclaimer />
 
       <Card>
