@@ -22,12 +22,12 @@ import {
 } from "@/components/ui/sidebar";
 
 const items = [
-  { title: "Dashboard", url: "/", icon: LayoutDashboard },
-  { title: "Email Generator", url: "/email", icon: Mail },
-  { title: "Meeting Notes", url: "/meetings", icon: FileText },
-  { title: "Task Planner", url: "/tasks", icon: ListChecks },
-  { title: "Research", url: "/research", icon: Search },
-  { title: "AI Chat", url: "/chat", icon: MessagesSquare },
+  { title: "Dashboard", url: "/", icon: LayoutDashboard, color: "text-primary" },
+  { title: "Email Generator", url: "/email", icon: Mail, color: "text-email" },
+  { title: "Meeting Notes", url: "/meetings", icon: FileText, color: "text-meeting" },
+  { title: "Task Planner", url: "/tasks", icon: ListChecks, color: "text-task" },
+  { title: "Research", url: "/research", icon: Search, color: "text-research" },
+  { title: "AI Chat", url: "/chat", icon: MessagesSquare, color: "text-chat" },
 ] as const;
 
 export function AppSidebar() {
@@ -58,7 +58,7 @@ export function AppSidebar() {
                   <SidebarMenuItem key={item.url}>
                     <SidebarMenuButton asChild isActive={isActive} tooltip={item.title}>
                       <Link to={item.url}>
-                        <item.icon className="h-4 w-4" />
+                        <item.icon className={`h-4 w-4 ${item.color}`} />
                         <span>{item.title}</span>
                       </Link>
                     </SidebarMenuButton>
