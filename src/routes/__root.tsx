@@ -72,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Workmate AI — AI Workplace Productivity Assistant" },
+      { title: "Amateur — AI Workplace Productivity Assistant" },
       { name: "description", content: "Automate workplace tasks with AI: write emails, summarize meetings, plan projects, research topics, and chat with your assistant." },
     ],
     links: [
@@ -109,7 +109,7 @@ function RootComponent() {
         <SidebarInset>
           <header className="sticky top-0 z-10 flex h-14 items-center gap-2 border-b border-border bg-background/80 px-4 backdrop-blur">
             <SidebarTrigger />
-            <div className="text-sm font-medium text-muted-foreground">Workmate AI</div>
+            <div className="text-sm font-medium text-muted-foreground">Amateur</div>
           </header>
           <main className="flex-1 p-4 md:p-8">
             <Outlet />

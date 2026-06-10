@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/page-header";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dashboard — Workmate AI" },
+      { title: "Dashboard — Amateur" },
       { name: "description", content: "Your AI-powered workplace productivity dashboard." },
     ],
   }),
@@ -26,7 +26,7 @@ function Dashboard() {
     <div className="mx-auto max-w-6xl space-y-8">
       <PageHeader
         icon={<Sparkles className="h-5 w-5" />}
-        title="Welcome to Workmate AI"
+        title="Welcome to Amateur"
         description="Your AI assistant for everyday workplace tasks. Pick a tool to get started."
       />
 
@@ -53,7 +53,7 @@ function Dashboard() {
         <CardContent className="pt-6">
           <h3 className="text-sm font-semibold">Responsible AI</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            Workmate AI generates suggestions to accelerate your work. Outputs may contain
+            Amateur generates suggestions to accelerate your work. Outputs may contain
             inaccuracies or omissions. Always review AI-generated content before sending,
             sharing, or making decisions based on it. Do not share confidential information
             you wouldn't share with a third-party service.
