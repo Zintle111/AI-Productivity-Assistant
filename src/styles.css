@@ -103,13 +103,13 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.72 0.16 260);
-  --sidebar: oklch(0.18 0.02 265);
+  --sidebar: oklch(0.15 0.025 265);
   --sidebar-foreground: oklch(0.97 0.005 260);
   --sidebar-primary: oklch(0.72 0.16 260);
   --sidebar-primary-foreground: oklch(0.16 0.015 265);
-  --sidebar-accent: oklch(0.26 0.03 270);
+  --sidebar-accent: oklch(0.24 0.035 265);
   --sidebar-accent-foreground: oklch(0.97 0.005 260);
-  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-border: oklch(1 0 0 / 12%);
   --sidebar-ring: oklch(0.72 0.16 260);
   /* Tool accent colours */
   --email: oklch(0.72 0.12 255);
